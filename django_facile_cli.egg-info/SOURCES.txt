@@ -1,0 +1,10 @@
+README.md
+setup.py
+django_facile/__init__.py
+django_facile/cli.py
+django_facile_cli.egg-info/PKG-INFO
+django_facile_cli.egg-info/SOURCES.txt
+django_facile_cli.egg-info/dependency_links.txt
+django_facile_cli.egg-info/entry_points.txt
+django_facile_cli.egg-info/requires.txt
+django_facile_cli.egg-info/top_level.txt
