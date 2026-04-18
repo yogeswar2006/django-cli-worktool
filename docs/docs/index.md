@@ -1,4 +1,4 @@
-#  Django Facile
+#  `Django Facile`
 
 **Django Facile** is a developer-focused CLI tool designed to simplify and automate Django project setup, configuration, and workflows.
 

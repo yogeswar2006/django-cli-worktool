@@ -3,35 +3,41 @@
 
 #  `installation.md`
 
-```md
-#  Installation
-
 ---
 
-## Create virtual env (Best Practice)
+### Create virtual env (Best Practice)
 ```bash
 python -m venv venv
-
-## activate venv
-# for windows
+```
+### activate venv
+### for windows
+```bash
 venv/scripts/activate
-
-# for linux 
+```
+### for linux 
+```bash
 source venv/bin/activate
+
 ```
 
 ##  Install via pip
 
 ```bash
 pip install django-facile
-
-## Verify the installation
-django-facile --help
-## Check version
-django-facile --version
-
 ```
+
+### Verify the installation
+```bash
+django-facile --help
+```
+### Check version
+```bash
+django-facile --version
+```
+
+
 ## Project structure (After creating project)
+```bash
 myproject/
 ├── manage.py
 ├── settings/
@@ -41,3 +47,4 @@ myproject/
 ├── wsgi.py
 ├── .env
 ├── .gitignore
+```
