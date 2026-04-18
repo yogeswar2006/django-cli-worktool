@@ -398,6 +398,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#create-virtual-env-best-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create virtual env (Best Practice)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate-venv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        activate venv
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for windows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for linux
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-via-pip" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -405,6 +449,34 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Install via pip">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verify-the-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify the installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check version
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -508,6 +580,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#create-virtual-env-best-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create virtual env (Best Practice)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate-venv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        activate venv
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for windows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for linux
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-via-pip" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -515,6 +631,34 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Install via pip">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verify-the-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify the installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check version
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -551,32 +695,29 @@
 
 <hr />
 <h1 id="installationmd"><code>installation.md</code></h1>
-<pre><code class="language-md">#  Installation
+<hr />
+<h3 id="create-virtual-env-best-practice">Create virtual env (Best Practice)</h3>
+<pre><code class="language-bash">python -m venv venv
+</code></pre>
+<h3 id="activate-venv">activate venv</h3>
+<h3 id="for-windows">for windows</h3>
+<pre><code class="language-bash">venv/scripts/activate
+</code></pre>
+<h3 id="for-linux">for linux</h3>
+<pre><code class="language-bash">source venv/bin/activate
 
----
-
-## Create virtual env (Best Practice)
-```bash
-python -m venv venv
-
-## activate venv
-# for windows
-venv/scripts/activate
-
-# for linux 
-source venv/bin/activate
 </code></pre>
 <h2 id="install-via-pip">Install via pip</h2>
 <pre><code class="language-bash">pip install django-facile
-
-## Verify the installation
-django-facile --help
-## Check version
-django-facile --version
-
+</code></pre>
+<h3 id="verify-the-installation">Verify the installation</h3>
+<pre><code class="language-bash">django-facile --help
+</code></pre>
+<h3 id="check-version">Check version</h3>
+<pre><code class="language-bash">django-facile --version
 </code></pre>
 <h2 id="project-structure-after-creating-project">Project structure (After creating project)</h2>
-<p>myproject/
+<pre><code class="language-bash">myproject/
 ├── manage.py
 ├── settings/
 ├── apps/
@@ -584,7 +725,8 @@ django-facile --version
 ├── asgi.py
 ├── wsgi.py
 ├── .env
-├── .gitignore</p>
+├── .gitignore
+</code></pre>
 
 
 
@@ -634,7 +776,7 @@ django-facile --version
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.expand", "navigation.tabs", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
