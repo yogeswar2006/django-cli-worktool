@@ -1,0 +1,20 @@
+site_name: Django Facile
+site_description: django-facile Simplified Django CLI tool
+site_author: Yogeswar
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+repo_url: https://github.com/yogeswar2006/django-cli-worktool
+repo_name: django-cli-worktool
+
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Commands: commands.md
+  - Workflow: workflow.md
