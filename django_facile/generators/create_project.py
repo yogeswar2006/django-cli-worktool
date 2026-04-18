@@ -19,3 +19,4 @@ def create_project(name):
     
     print(" Django project created:", name)
     
+    

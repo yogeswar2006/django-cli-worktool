@@ -1,0 +1,15 @@
+[project]
+name = "django-facile"
+version = "1.0.0"
+description = "A CLI tool to simplify Django development"
+authors = [{name="Yogeswar"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "django",
+    "python-dotenv",
+    "psycopg2-binary",
+]
+
+[project.scripts]
+django-facile = "django_facile.cli:main"

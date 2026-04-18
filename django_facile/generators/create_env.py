@@ -40,10 +40,28 @@ load_dotenv()
 
     # Create .env file
     with open(os.path.join(name, ".env"), 'w') as f:
-        f.write(
-            f"ENV={env}\n"
-            f"DEBUG={debug}\n"
-            f"SECRET_KEY={secret_key}\n"
-        )
+     f.write(
+        f"ENV={env}\n"
+        f"DEBUG={debug}\n"
+        f"SECRET_KEY={secret_key}\n"
+        
+        f"# Update your database credentials (ONLY USED IN PRODUCTION)\n"
+        f'DATABASE_NAME=postgres\n'
+        f'DATABASE_USER=postgres\n'
+        f'DATABASE_PASSWORD=password # Update your password\n'  
+        f'DATABASE_HOST=localhost\n'
+        f'DATABASE_PORT=5432\n'
+    )
+    gitignore_path=os.path.join(name,".gitignore")
+    with open(gitignore_path, "w") as f:
+     f.write(
+        ".env\n"
+        "__pycache__/\n"
+        "*.pyc\n"
+        "db.sqlite3\n"
+        "staticfiles/\n"
+        "media/\n"
+    )
+    print(" Configured .gitignore file")
 
     print(" Configured .env file")
