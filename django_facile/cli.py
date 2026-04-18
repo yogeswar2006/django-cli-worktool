@@ -30,7 +30,7 @@ def main():
     parser.add_argument(
         "--version",
         action="version",
-        version="django-facile 1.0.0"
+        version="django-facile 1.0.2"
     )
     
     switch=subparsers.add_parser("switch-env",help="Switch environment")

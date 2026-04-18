@@ -1,20 +1,20 @@
-# 🚀 Django Facile
+#  Django Facile
 
 **Django Facile** is a powerful CLI tool that simplifies Django development by automating project setup, environment management, and common workflows.
 
 ---
 
-## ✨ Features
+##  Features
 
-* ⚡ One-command project setup
-* 🔄 Dev ↔ Prod environment switching
-* 🛠 Built-in commands for migrations, shell, server
-* 🔐 Production-ready configuration helpers
-* 📦 Simplified Django workflow
+*  One-command project setup
+*  Dev ↔ Prod environment switching
+*  Built-in commands for migrations, shell, server
+*  Production-ready configuration helpers
+*  Simplified Django workflow
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ```bash
 pip install django-facile
@@ -22,7 +22,7 @@ pip install django-facile
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 django-facile startproject myproject --env dev --db sqlite
@@ -32,7 +32,7 @@ django-facile run
 
 ---
 
-# 📚 Commands Overview
+#  Commands Overview
 
 | Command       | Description                         |
 | ------------- | ----------------------------------- |
@@ -50,16 +50,16 @@ django-facile run
 
 ---
 
-# 🧠 Environment Modes
+#  Environment Modes
 
-## 🧪 Development Mode (dev)
+##  Development Mode (dev)
 
 * Uses **SQLite**
 * DEBUG = True
 * Auto static serving
 * Faster development
 
-## 🚀 Production Mode (prod)
+##  Production Mode (prod)
 
 * Uses **PostgreSQL**
 * DEBUG = False
@@ -68,11 +68,11 @@ django-facile run
 
 ---
 
-# ⚙️ Commands (Detailed)
+#  Commands (Detailed)
 
 ---
 
-## 🏗 Create Project
+##  Create Project
 
 ```bash
 django-facile startproject <project_name> --env dev --db sqlite
@@ -86,7 +86,7 @@ django-facile startproject myproject --env dev --db sqlite
 
 ---
 
-## 📦 Create App
+##  Create App
 
 ```bash
 django-facile startapp <app_name>
@@ -100,7 +100,7 @@ django-facile startapp blog
 
 ---
 
-## 🔄 Switch Environment
+##  Switch Environment
 
 ### Switch to Development:
 
@@ -116,7 +116,7 @@ django-facile switch-env prod
 
 ---
 
-## ▶️ Run Server
+##  Run Server
 
 ```bash
 django-facile run
@@ -136,7 +136,7 @@ django-facile run --port 8001
 django-facile migrate
 ```
 
-👉 Internally runs:
+ Internally runs:
 
 * `makemigrations`
 * `migrate`
@@ -151,7 +151,7 @@ django-facile superuser
 
 ---
 
-## 🐚 Django Shell
+##  Django Shell
 
 ```bash
 django-facile shell
@@ -159,7 +159,7 @@ django-facile shell
 
 ---
 
-## 🔍 Check Configuration
+##  Check Configuration
 
 ### Normal check:
 
@@ -175,7 +175,7 @@ django-facile check --deploy
 
 ---
 
-## 📦 Collect Static Files (Production Only)
+##  Collect Static Files (Production Only)
 
 ```bash
 django-facile collectstatic
@@ -193,7 +193,7 @@ django-facile --help
 
 ---
 
-## 🔢 Version
+##  Version
 
 ```bash
 django-facile --version
@@ -201,9 +201,9 @@ django-facile --version
 
 ---
 
-# 🔄 Typical Workflow
+#  Typical Workflow
 
-## 🧪 Development Workflow
+##  Development Workflow
 
 ```bash
 django-facile startproject myproject --env dev --db sqlite
@@ -214,7 +214,7 @@ django-facile run
 
 ---
 
-## 🚀 Production Workflow
+##  Production Workflow
 
 ```bash
 django-facile switch-env prod
@@ -234,7 +234,7 @@ django-facile check --deploy
 
 ---
 
-# 🧠 Why Django Facile?
+#  Why Django Facile?
 
 Django setup and environment management can be repetitive and error-prone.
 Django Facile simplifies the workflow into a clean, developer-friendly CLI.
